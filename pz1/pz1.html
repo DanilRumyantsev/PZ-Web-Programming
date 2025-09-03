@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Практическое занятие №1</title>
-    <link rel="stylesheet" href="./assets/style/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/style/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <div class="header__logo"><img src="./assets/images/logo.svg" alt=""></div>
-                <nav class="header__nav">
-                    <ul>
-                        <li><a class="header__nav__link" href="">All Products</a></li>
-                        <li><a class="header__nav__link" href="">Solutions</a></li>
-                        <li><a class="header__nav__link" href="">About</a></li>
-                        <li><a class="header__nav__link" href="">Support</a></li>
-                    </ul>
-                </nav>
-                <div class="header__controls">
-                    <div class="header__controls__search"><img src="./assets/images/search.svg" alt=""></div>
-                    <div class="header__controls__cart"><img src="./assets/images/cart.svg" alt=""></div>
-                </div>
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <img src="./assets/images/logo.svg" alt="" />
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav__list">
+              <li><a class="header__nav__link" href="#">All Products</a></li>
+              <li>
+                <a class="header__nav__link" href="#">
+                  Solutions
+                  <img src="./assets/images/downArrow.svg" />
+                </a>
+              </li>
+              <li><a class="header__nav__link" href="#">About</a></li>
+              <li><a class="header__nav__link" href="#">Support</a></li>
+            </ul>
+          </nav>
+          <div class="header__controls">
+            <div class="header__controls__search">
+              <img src="./assets/images/search.svg" alt="" />
             </div>
+            <div class="header__controls__cart">
+              <img src="./assets/images/cart.svg" alt="" />
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <section class="slider">
-        <div class="container">
-            <div class="slider__content">
-                <div class="slider__content__text">
-                    <p class="slider__content__text__head">
-                        Технологии для вашей жизни.
-                    </p>
-                    <p class="slider__content__text__element">
-                        Широкий выбор современной техники от ведущих брендов.
-                        Все, что нужно для работы, развлечений и повседневных задач.
-                    </p>
-                    <button class="slider__content__text__choise">Выбрать</button>
-                </div>
-                <div class="slider__content__image">
-                    <img src="./assets/images/phones.png" alt="">
-                </div>
-            </div>
+      <div class="container">
+        <div class="slider__content">
+          <div class="slider__content_left">
+            <img src="./assets/images/leftArrow.png" alt="" />
+          </div>
+          <div class="slider__content__text">
+            <p class="slider__content__text__head">
+              Технологии для вашей жизни.
+            </p>
+            <p class="slider__content__text__element">
+              Широкий выбор современной техники от ведущих брендов. Все, что
+              нужно для работы, развлечений и повседневных задач.
+            </p>
+            <button class="slider__content__text__choise">Выбрать</button>
+          </div>
+          <div class="slider__content__image">
+            <img src="./assets/images/phones.png" alt="" />
+          </div>
+          <div class="slider__content__right">
+            <img src="./assets/images/rightArrow.svg" alt="" />
+          </div>
+          <div class="slider__content__footer">
+            <span class="slider__content__line first"></span>
+            <span class="slider__content__line second"></span>
+            <span class="slider__content__line third"></span>
+          </div>
         </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>

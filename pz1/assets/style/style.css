@@ -266,6 +266,71 @@ section {
   font-size: 26px;
 }
 
+.grid__pictures__phones_image {
+  margin: 144px 0 0 14px;
+}
+
+.grid__pictures__phones__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid__pictures__phones__text__directory {
+  margin: 41px 0 0 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.grid__pictures__phones__text__desc {
+  width: 250px;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.grid__pictures__tablet_image {
+  margin: 41px 25px 0 0;
+}
+
+.grid__pictures__tablet__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid__pictures__tablet__text__directory {
+  margin: 114px 0 0 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.grid__pictures__tablet__text__desc {
+  width: 250px;
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+}
+
+.grid__pictures__watch__container {
+  display: flex;
+}
+
+.grid__pictures__watch__text {
+  width: 175px;
+  margin-top: 87px;
+  text-align: right;
+}
+
+.grid__pictures__watch__text__directory {
+  margin: 0;
+}
+
+.grid__pictures__watch__text__desc {
+  margin: 0;
+  font-size: 32px;
+}
+
 .store__head {
   width: 1050px;
   font-size: 45px;

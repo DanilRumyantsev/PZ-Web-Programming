@@ -83,7 +83,7 @@ section {
   height: 50px;
   border-radius: 200px;
   font-size: 19px;
-  font-weight: 100;
+  font-weight: 400;
   display: block;
   background-color: #000;
   color: #fff;
@@ -210,7 +210,7 @@ section {
   display: grid;
   grid-template-columns: 640px 312px 312px;
   grid-template-rows: 470px 270px;
-  gap: 50px;
+  gap: 16px;
 }
 
 .grid__pictures__wrapper {
@@ -240,6 +240,7 @@ section {
 .grid__pictures__wrapper:nth-child(4) {
   grid-column: 1;
   grid-row: 2;
+  margin-top: 34px;
 }
 
 .grid__pictures__text {

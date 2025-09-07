@@ -1,93 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script>
-        // function getPlace(a, b) {
-        //     if (a == 0 || b == 0) {
-        //         console.error('Введите значения не равные 0');
-        //     }
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <script src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <section class="preparation">
+      <div class="container">
+        <h1>Разогревочные задания</h1>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getPlace(1, 2)">Place</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getSquarePerimeter(2)">Square</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getPharengeit(2)">Pharengeit</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getDivision(1, 2)">Division</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getMultiply(1, 2)">Multiply</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getNumber(2)">Number</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getTime(2)">Time</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getCompare(2, 3)">Compare</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getYearsOld(2006, 2025)">
+          Birthday
+        </button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getAdditional(2, 3)">Additional</button>
+      </div>
+    </section>
 
-        //     const S = a * b;
+    <hr />
 
-        //     return S;
-        // }
+    <section class="cycle">
+      <div class="container">
+        <h1>Циклы</h1>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getNumbers()">getNumbers</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getSumNumbers(10)">getSumNumbers</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getFactorial(10)">getFactorial</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getEvenNumbers()">getEvenNumbers</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="multiplyOnFive()">multiplyOnFive</button>
+      </div>
 
-        // console.log(getPlace(4, 4));
+      <div class="container">
+        <button class="tasks" onclick="getMultiplicityThree()">
+          getMultiplicityThree
+        </button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getBackNumbers()">getBackNumbers</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getMultiplyNumbers(4)">
+          getMultiplyNumbers
+        </button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getMultiplicitySeven()">
+          getMultiplicitySeven
+        </button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="printSymbol('symbol', 5)">
+          printSymbol
+        </button>
+      </div>
+    </section>
 
-        // const squareWalls = 4;
-
-        // function getSquarePerimeter(a) {
-        //     if (a == 0) console.error('Введите значения не равные 0')
-
-        //     return P = a * squareWalls;
-        // }
-
-        // console.log(getSquarePerimeter(4));
-
-        // function getPharengeit(c) {
-        //     if (c == 0) console.error('Введите значения не равные 0')
-
-        //     return p = (c * 9/5) + 32
-        // }
-
-        // console.log(getPharengeit(5));
-
-        // function getDivision(a, b) {
-        //     if (a == 0 || b == 0) console.error('Введите значения не равные 0')
-
-        //     return c = a % b;
-        // }
-
-        // console.log(getDivision(6, 3));
-
-        // function getMultiply(a, b) {
-        //     if (a == 0 || b == 0) console.error('Введите значения не равные 0')
-
-        //     return c = a * b;
-        // }
-
-        // console.log(getMultiply(6, 3));
-
-        // function getNumber(a) {
-        //     if (a == 0) console.error('Введите значение не равные 0')
-
-        //     if (b = a % 2 == 0) {
-        //         return 'Четное'
-        //     } else {
-        //         return 'Не четное'
-        //     }
-        // }
-
-        // console.log(getNumber(12));
-
-        // function getTime(a) {
-        //     if (a == 0) console.error('Введите значение не равные 0')
-
-        //     return b = a * 60 + " минут(ы)"
-        // }
-
-        // console.log(getTime(2));
-
-        // function getResult(a, b) {
-        //     if (a == 0 || b == 0) console.error('Введите значения не равные 0')
-
-        //     if (a > b) {
-        //         return 'a > b'
-        //     } else if (a < b) {
-        //         return 'a < b'
-        //     } else {
-        //         return 'a == b'
-        //     }
-        // }
-
-        // console.log(getResult(3, 3))
-
-        
-    </script>
-</body>
+    <section class="conditions">
+      <div class="container">
+        <h1>Условия</h1>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getPositiveNegative(5)">
+          getPositiveNegative
+        </button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getResultTest(70)">getResultTest</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getEventThree(9)">getEventThree</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getEven(70)">getEven</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getCompare(70, 5)">getCompare</button>
+      </div>
+      <div class="container">
+        <button class="tasks" onclick="getVisYear(2000)">getVisYear</button>
+      </div>
+    </section>
+  </body>
 </html>

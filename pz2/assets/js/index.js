@@ -232,3 +232,286 @@ function getVisYear(a) {
     console.log("Не високосный");
   }
 }
+
+function getJacket(a) {
+  if (a <= 10) {
+    console.log("Надеть куртку");
+  } else {
+    console.log("Не надевать куртку");
+  }
+}
+
+function getAdditionFiveEleven(a) {
+  if (a % 5 == 0 && a % 5 == 0) {
+    console.log("a is " + true);
+  } else {
+    console.log("a is " + false);
+  }
+}
+
+function getEvenEl(a, b) {
+  if (a == b) {
+    console.log("равны");
+  } else {
+    console.log("не равны");
+  }
+}
+
+function getSymbol(a) {
+  if (a == a.toUpperCase()) {
+    console.log("AZ");
+  } else if (a == a.toLowerCase()) {
+    console.log("az");
+  } else {
+    console.log("Az or Za");
+  }
+}
+
+//massive
+function getElements(a) {
+  a.forEach((i) => {
+    console.log(i);
+  });
+}
+
+function getEvenElement(a) {
+  console.log(a.find((element) => element % 2 === 0));
+}
+
+function pushElement(a) {
+  let arr = [1, 2];
+  arr.forEach((i) => {
+    console.log("Massive before ", i);
+  });
+
+  arr.push(a);
+
+  arr.forEach((i) => {
+    console.log("Massive after ", i);
+  });
+}
+
+function pushFirstElement(a) {
+  let arr = [1, 2];
+  arr.forEach((i) => {
+    console.log("Massive before ", i);
+  });
+
+  arr.unshift(a);
+
+  arr.forEach((i) => {
+    console.log("Massive after ", i);
+  });
+}
+
+function squareElements(a) {
+  a.forEach((i) => {
+    console.log("Before ", i);
+  });
+
+  const squares = a.map((i) => {
+    return (i = i * 2);
+  });
+
+  squares.forEach((i) => {
+    console.log("After ", i);
+  });
+}
+
+function popElement(a) {
+  a.forEach((i) => {
+    console.log("Before ", i);
+  });
+
+  a.pop();
+
+  a.forEach((i) => {
+    console.log("After ", i);
+  });
+}
+
+function shiftElement(a) {
+  a.forEach((i) => {
+    console.log("Before ", i);
+  });
+
+  a.shift();
+
+  a.forEach((i) => {
+    console.log("After ", i);
+  });
+}
+
+function unionMassive(a, b) {
+  const c = a.concat(b);
+
+  c.forEach((i) => {
+    console.log(i);
+  });
+}
+
+function spliceElement(a, b, c) {
+  a.forEach((i) => {
+    console.log("Before ", i);
+  });
+
+  a.splice(b, c);
+
+  a.forEach((i) => {
+    console.log("After ", i);
+  });
+}
+
+function sliceElement(a, b) {
+  a.forEach((i) => {
+    console.log("Before ", i);
+  });
+
+  const newArray = a.slice(b);
+
+  newArray.forEach((i) => {
+    console.log("New ", i);
+  });
+}
+
+function stringArray(a) {
+  const string = a.toString();
+
+  console.log(string);
+}
+
+function arrayString(a) {
+  const array = a.split(" ");
+
+  console.log(array);
+}
+
+function getSumElements(a) {
+  let sum = 0;
+  a.forEach((i) => {
+    sum = sum + i;
+  });
+
+  console.log(sum);
+}
+
+function getTenElements(a) {
+  const ten = a.map((element) => element + 10);
+
+  ten.forEach((i) => {
+    console.log(i);
+  });
+}
+
+function getIndexElement(a) {
+  console.log(a.findIndex((element) => element <= -1));
+}
+
+function createObject() {
+  const person = {
+    name: "Анна",
+    age: 25,
+  };
+
+  console.log("Имя:", person.name);
+  console.log("Возраст:", person.age);
+  console.log("Полный объект:", person);
+}
+
+function addObjectProperty() {
+  const person = {
+    name: "Иван",
+    age: 30,
+  };
+
+  console.log("До добавления:", person);
+  person.city = "Москва";
+  console.log("После добавления:", person);
+  console.log("Город:", person.city);
+}
+
+function deleteObjectProperty() {
+  const person = {
+    name: "Ольга",
+    age: 28,
+  };
+
+  console.log("До удаления:", person);
+  delete person.age;
+  console.log("После удаления:", person);
+}
+
+function changePropertyValue() {
+  const person = {
+    name: "Мария",
+    age: 22,
+  };
+
+  console.log("До изменения:", person.name);
+  person.name = "Елена";
+  console.log("После изменения:", person.name);
+  console.log("Полный объект:", person);
+}
+
+function checkPropertyExists(obj, propertyName) {
+  const result = propertyName in obj;
+  console.log(`Свойство "${propertyName}" существует:`, result);
+  return result;
+}
+
+function checkPropertyExistsButton() {
+  const person = { name: "Алексей", age: 35 };
+  checkPropertyExists(person, "name");
+  checkPropertyExists(person, "city");
+}
+
+function getPropertyValue(obj, propertyName) {
+  const value = obj[propertyName];
+  console.log(`Значение свойства "${propertyName}":`, value);
+  return value;
+}
+
+function getPropertyValueButton() {
+  const person = { name: "Дмитрий", age: 40 };
+  getPropertyValue(person, "name");
+  getPropertyValue(person, "city");
+}
+
+function compareObjects() {
+  function isEqual(obj1, obj2) {
+    const keys1 = Object.keys(obj1);
+    const keys2 = Object.keys(obj2);
+
+    if (keys1.length !== keys2.length) {
+      return false;
+    }
+
+    for (let key of keys1) {
+      if (obj1[key] !== obj2[key]) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
+  const person1 = { name: "Игорь", age: 29 };
+  const person2 = { name: "Игорь", age: 29 };
+  const person3 = { name: "Игорь", age: 30 };
+
+  console.log("Объекты person1 и person2 равны:", isEqual(person1, person2));
+  console.log("Объекты person1 и person3 равны:", isEqual(person1, person3));
+}
+
+function iterateObjectProperties() {
+  const person = {
+    name: "Светлана",
+    age: 27,
+    city: "Казань",
+  };
+
+  console.log("Свойства объекта:");
+  for (let key in person) {
+    console.log(`${key}: ${person[key]}`);
+  }
+}

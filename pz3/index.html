@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/index.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h1 id="header">Заголовок</h1>
+        <button class="task" onclick="editHeader()">Изменить заголовок</button>
+      </div>
+      <div class="container">
+        <input
+          class="task_input"
+          type="text"
+          id="inputField"
+          placeholder="Введите текст"
+        />
+        <input
+          class="task_input"
+          type="text"
+          id="outputText"
+          placeholder="Тут будет вывод"
+          disabled
+        />
+      </div>
+      <div class="container">
+        <div class="text box">
+          <p>Клик 2 раза по квадрату</p>
+        </div>
+        <div class="background" id="backgroundBox"></div>
+      </div>
+      <div class="container">
+        <div class="submit box">
+          <input type="checkbox" class="checkboxSubmit" id="agreeCheckbox" />
+          <button class="task" id="submitButton" disabled>
+            Неактивная кнопка
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="boxSize" id="windowSize"></div>
+      </div>
+      <div class="container">
+        <a href="#" class="link" id="link">Ссылка</a>
+      </div>
+      <div class="container">
+        <button class="task" id="hideMe" onclick="displayNoneButton()">
+          Нажми
+        </button>
+      </div>
+      <div class="container">
+        <input
+          type="text"
+          class="task_input"
+          placeholder="Максимальная длина 10 символов"
+          id="textField"
+        />
+      </div>
+      <div class="container">
+        <button
+          class="task"
+          id="toggleButton"
+          onclick="buttonToggle()"
+          style="margin-bottom: 20px"
+        >
+          Нажми
+        </button>
+        <div class="active" id="toggleBox"></div>
+      </div>
+    </section>
+
+    <hr />
+    <section class="section">
+      <div class="container">
+        <button class="task" id="example">example</button>
+      </div>
+      <div class="container">
+        <button class="task button active">button</button>
+      </div>
+      <div class="container">
+        <button class="task" id="myButton">myButton</button>
+      </div>
+      <div class="container">
+        <ul id="ul">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </div>
+      <div class="container">
+        <button class="task" id="deleteMe" onclick="deleteButton()">
+          Delete me
+        </button>
+      </div>
+    </section>
+    <hr />
+    <section class="section">
+      <div class="container">
+        <div class="items">
+          <div class="item">Элемент 1</div>
+          <div class="item">Элемент 2</div>
+          <div class="item">Элемент 3</div>
+          <div class="item">Элемент 4</div>
+          <div class="item">Элемент 5</div>
+        </div>
+        <button
+          class="task"
+          onclick="changeTextFromArr(['первый', 'второй', 'третий', 'четвертый', 'пятый'])"
+        >
+          change text
+        </button>
+      </div>
+      <div class="container">
+        <ul class="ul" id="productList"></ul>
+      </div>
+      <div class="container">
+        <div class="items">
+          <div id="element1" class="element">1</div>
+          <div id="element2" class="element">2</div>
+          <div id="element3" class="element">3</div>
+          <div id="element4" class="element">4</div>
+          <div id="element5" class="element">5</div>
+          <div id="element6" class="element">6</div>
+        </div>
+        <button
+          class="task"
+          onclick="changeElements([{id: 'element1'}, {id: 'element3'}, {id: 'element5'}])"
+        >
+          change elements
+        </button>
+      </div>
+    </section>
+    <hr />
+    <section class="section">
+      <div class="container">
+        <h1>Динамическая форма с валидацией</h1>
+      </div>
+
+      <div class="container">
+        <form id="userForm" class="form">
+          <div class="form-group">
+            <label for="userName" class="form-label">Имя:</label>
+            <input type="text" id="userName" class="form-input" required />
+          </div>
+
+          <div class="form-group">
+            <label for="userAge" class="form-label">Возраст:</label>
+            <input
+              type="number"
+              id="userAge"
+              class="form-input"
+              required
+              min="1"
+              max="120"
+            />
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="form-button">
+              Добавить пользователя
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="container">
+        <div id="resultsContainer">
+          <h2>Добавленные пользователи:</h2>
+          <table id="usersTable" class="users-table">
+            <thead>
+              <tr>
+                <th>Имя</th>
+                <th>Возраст</th>
+                <th>Статус</th>
+              </tr>
+            </thead>
+            <tbody id="usersTableBody"></tbody>
+          </table>
+          <div id="noUsersMessage" class="no-users">
+            Пока нет добавленных пользователей
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
